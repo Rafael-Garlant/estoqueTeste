@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #e91e63; /* Rosa Pink Forte */
+  --primary-hover: #c2185b; /* Rosa Escuro para hover */
+  --bg-color: #fce4ec; /* Rosa Bem Claro (Fundo) */
+  --white: #ffffff;
+  --text-color: #333;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  background-color: var(--white);
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.2); /* Sombra rosada */
+}
+
+header h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+/* Formulário */
+.form-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #f8bbd0;
+}
+
+#form-produto {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: var(--primary-color);
+}
+
+button#btn-salvar {
+  padding: 12px 25px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button#btn-salvar:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background-color: #fff0f6; /* Hover rosinha na tabela */
+}
+
+/* Botões de Ação na tabela */
+.btn-action {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #f8bbd0; /* Rosa claro para editar */
+  color: #880e4f;
+}
+
+.btn-delete {
+  background-color: #ff5252; /* Vermelho padrão para deletar */
+}
