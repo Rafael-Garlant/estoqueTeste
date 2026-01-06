@@ -28,3 +28,4 @@ export function renderProdutos(listaProdutos) {
     tabelaCorpo.appendChild(row);
   });
 }
+// Fim do arquivo

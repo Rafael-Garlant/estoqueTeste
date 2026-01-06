@@ -11,3 +11,5 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
+
+// Additional configuration settings can be added here

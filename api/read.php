@@ -14,3 +14,4 @@ try{
 } catch(PDOException $e){
   echo json_encode(['error' => $e->getMessage()]);
 }
+// No closing PHP tag to prevent accidental output
