@@ -1,4 +1,4 @@
-import { tabelaCorpo } from "./elements";
+import { tabelaCorpo } from "./elements.js";
 
 function createRow(produto) {
   const tr = document.createElement("tr");
